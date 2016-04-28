@@ -37,7 +37,7 @@
 
       </div>
 
-      <p class='red'> PHP Template File:  index.php </p>
-      <p class='red'> PAGE #1 - TERMINAL PAGE+ </p>
+      <p class='red'> PHP Template File:  page.php </p>
+      <p class='red'> Automatically default TEMPLATE for all pages </p>
 
 <?php get_footer(); ?>

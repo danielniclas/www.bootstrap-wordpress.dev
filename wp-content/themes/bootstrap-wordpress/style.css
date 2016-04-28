@@ -12,3 +12,110 @@ Text Domain: bootstrap-to-wp
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.sidebar{
+    margin-top: 40px;
+    color: #444;
+}
+.sidebar h3{
+    color: #888;
+}
+.widget {
+    margin: 10px 0 30px;
+}
+article.post {
+    margin: 20px 0 40px;
+}
+.portfolio-piece img,
+.portfolio-image img,
+.featured-image img {
+    max-width: 100%;
+}
+
+.prev-next {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: right;
+
+}
+
+
+
+
+/*<?php body_class(); ?>*/
+/*Add to body tag in header.php:  <?php body_class(); ?> to see/manage the admin bar when someone logged in:*/
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+
+.current-menu-item > a {
+    background: red;
+}
+
+@media (min-width:768px) {
+    .sub-menu {
+        display: none;
+        position: absolute;
+        background: #222;
+        padding: 10px 15px;
+        width: 200px;
+    }
+
+    li:hover .sub-menu {
+        display: block;
+    }
+}
+
+.sub-menu li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.sub-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.sub-menu a  {
+    color: #999;
+    text-decoration: none;
+}
+
+.sub-menu a:hover  {
+    color: #fff;
+}
+
+.current-menu-item > a, .current-menu-parent > a {
+    /*background: #000;*/
+    background: red;
+}
+.current-menu-parent li a {
+    background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+@media (max-width:540px) {
+    .portfolio-piece h4 {
+        font-size: .8em;
+    }
+
+    .prev-next {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+}
